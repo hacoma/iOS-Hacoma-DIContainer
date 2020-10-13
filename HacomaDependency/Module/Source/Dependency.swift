@@ -7,9 +7,13 @@
 
 import Foundation
 
-public class Injector {
+public final class Dependency {
     
     private var injectables: [String: Injectable] = [:]
+    
+    public init() {
+        // available outside of the framework
+    }
     
     public func regist(type: Injectable.Type) {
         let injectable = type.init()

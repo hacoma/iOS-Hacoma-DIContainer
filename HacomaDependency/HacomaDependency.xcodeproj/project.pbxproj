@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C83231DB2533910F0017979E /* HacomaInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = C83231D92533910E0017979E /* HacomaInjector.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C8B501F62533AB10001576F8 /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B501F52533AB10001576F8 /* Injectable.swift */; };
-		C8B501FA2533AB40001576F8 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B501F92533AB40001576F8 /* Injector.swift */; };
+		C8583E02253601C100DA6662 /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8583E00253601C100DA6662 /* Injectable.swift */; };
+		C8583E03253601C100DA6662 /* Dependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8583E01253601C100DA6662 /* Dependency.swift */; };
+		C8BF65BB25360133007A249C /* Dependency.h in Headers */ = {isa = PBXBuildFile; fileRef = C8BF65B925360133007A249C /* Dependency.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C83231D62533910E0017979E /* HacomaInjector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HacomaInjector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C83231D92533910E0017979E /* HacomaInjector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HacomaInjector.h; sourceTree = "<group>"; };
-		C83231DA2533910E0017979E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C8B501F52533AB10001576F8 /* Injectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
-		C8B501F92533AB40001576F8 /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
+		C8583E00253601C100DA6662 /* Injectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
+		C8583E01253601C100DA6662 /* Dependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dependency.swift; sourceTree = "<group>"; };
+		C8BF65B725360133007A249C /* Dependency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dependency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8BF65B925360133007A249C /* Dependency.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dependency.h; sourceTree = "<group>"; };
+		C8BF65BA25360133007A249C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C83231D32533910E0017979E /* Frameworks */ = {
+		C8BF65B425360133007A249C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -31,105 +31,96 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C83231CC2533910E0017979E = {
+		C8BF659A253600E4007A249C = {
 			isa = PBXGroup;
 			children = (
-				C83231D82533910E0017979E /* Module */,
-				C83231D72533910E0017979E /* Products */,
-				C8B501EC253399CF001576F8 /* Frameworks */,
+				C8BF65B825360133007A249C /* Module */,
+				C8BF65A5253600E4007A249C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C83231D72533910E0017979E /* Products */ = {
+		C8BF65A5253600E4007A249C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C83231D62533910E0017979E /* HacomaInjector.framework */,
+				C8BF65B725360133007A249C /* Dependency.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C83231D82533910E0017979E /* Module */ = {
+		C8BF65B825360133007A249C /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				C83231E32533913E0017979E /* Source */,
-				C83231E2253391310017979E /* Supporting Files */,
+				C8E6431B25360276003FA67E /* Source */,
+				C8BF65BF25360136007A249C /* Supporting Files */,
 			);
 			path = Module;
 			sourceTree = "<group>";
 		};
-		C83231E2253391310017979E /* Supporting Files */ = {
+		C8BF65BF25360136007A249C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C83231D92533910E0017979E /* HacomaInjector.h */,
-				C83231DA2533910E0017979E /* Info.plist */,
+				C8BF65B925360133007A249C /* Dependency.h */,
+				C8BF65BA25360133007A249C /* Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C83231E32533913E0017979E /* Source */ = {
+		C8E6431B25360276003FA67E /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				C8B501F52533AB10001576F8 /* Injectable.swift */,
-				C8B501F92533AB40001576F8 /* Injector.swift */,
+				C8583E00253601C100DA6662 /* Injectable.swift */,
+				C8583E01253601C100DA6662 /* Dependency.swift */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		C8B501EC253399CF001576F8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		C83231D12533910E0017979E /* Headers */ = {
+		C8BF65B225360133007A249C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C83231DB2533910F0017979E /* HacomaInjector.h in Headers */,
+				C8BF65BB25360133007A249C /* Dependency.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C83231D52533910E0017979E /* HacomaInjector */ = {
+		C8BF65B625360133007A249C /* Dependency */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C83231DE2533910F0017979E /* Build configuration list for PBXNativeTarget "HacomaInjector" */;
+			buildConfigurationList = C8BF65BC25360133007A249C /* Build configuration list for PBXNativeTarget "Dependency" */;
 			buildPhases = (
-				C83231D12533910E0017979E /* Headers */,
-				C83231D22533910E0017979E /* Sources */,
-				C83231D32533910E0017979E /* Frameworks */,
-				C83231D42533910E0017979E /* Resources */,
+				C8BF65B225360133007A249C /* Headers */,
+				C8BF65B325360133007A249C /* Sources */,
+				C8BF65B425360133007A249C /* Frameworks */,
+				C8BF65B525360133007A249C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = HacomaInjector;
-			productName = HacomaInjector;
-			productReference = C83231D62533910E0017979E /* HacomaInjector.framework */;
+			name = Dependency;
+			productName = Dependency;
+			productReference = C8BF65B725360133007A249C /* Dependency.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C83231CD2533910E0017979E /* Project object */ = {
+		C8BF659B253600E4007A249C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
-					C83231D52533910E0017979E = {
+					C8BF65B625360133007A249C = {
 						CreatedOnToolsVersion = 12.0.1;
 						LastSwiftMigration = 1200;
 					};
 				};
 			};
-			buildConfigurationList = C83231D02533910E0017979E /* Build configuration list for PBXProject "HacomaInjector" */;
+			buildConfigurationList = C8BF659E253600E4007A249C /* Build configuration list for PBXProject "HacomaDependency" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -137,18 +128,18 @@
 				en,
 				Base,
 			);
-			mainGroup = C83231CC2533910E0017979E;
-			productRefGroup = C83231D72533910E0017979E /* Products */;
+			mainGroup = C8BF659A253600E4007A249C;
+			productRefGroup = C8BF65A5253600E4007A249C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C83231D52533910E0017979E /* HacomaInjector */,
+				C8BF65B625360133007A249C /* Dependency */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C83231D42533910E0017979E /* Resources */ = {
+		C8BF65B525360133007A249C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -158,19 +149,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C83231D22533910E0017979E /* Sources */ = {
+		C8BF65B325360133007A249C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8B501FA2533AB40001576F8 /* Injector.swift in Sources */,
-				C8B501F62533AB10001576F8 /* Injectable.swift in Sources */,
+				C8583E02253601C100DA6662 /* Injectable.swift in Sources */,
+				C8583E03253601C100DA6662 /* Dependency.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		C83231DC2533910F0017979E /* Debug */ = {
+		C8BF65AA253600E4007A249C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -234,7 +225,7 @@
 			};
 			name = Debug;
 		};
-		C83231DD2533910F0017979E /* Release */ = {
+		C8BF65AB253600E4007A249C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -292,7 +283,7 @@
 			};
 			name = Release;
 		};
-		C83231DF2533910F0017979E /* Debug */ = {
+		C8BF65BD25360133007A249C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -310,7 +301,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hacoma.HacomaInjector;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hacoma.Dependency;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -319,7 +310,7 @@
 			};
 			name = Debug;
 		};
-		C83231E02533910F0017979E /* Release */ = {
+		C8BF65BE25360133007A249C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -337,7 +328,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hacoma.HacomaInjector;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hacoma.Dependency;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -348,25 +339,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C83231D02533910E0017979E /* Build configuration list for PBXProject "HacomaInjector" */ = {
+		C8BF659E253600E4007A249C /* Build configuration list for PBXProject "HacomaDependency" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C83231DC2533910F0017979E /* Debug */,
-				C83231DD2533910F0017979E /* Release */,
+				C8BF65AA253600E4007A249C /* Debug */,
+				C8BF65AB253600E4007A249C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C83231DE2533910F0017979E /* Build configuration list for PBXNativeTarget "HacomaInjector" */ = {
+		C8BF65BC25360133007A249C /* Build configuration list for PBXNativeTarget "Dependency" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C83231DF2533910F0017979E /* Debug */,
-				C83231E02533910F0017979E /* Release */,
+				C8BF65BD25360133007A249C /* Debug */,
+				C8BF65BE25360133007A249C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C83231CD2533910E0017979E /* Project object */;
+	rootObject = C8BF659B253600E4007A249C /* Project object */;
 }

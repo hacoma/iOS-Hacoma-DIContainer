@@ -6,6 +6,7 @@
 //
 
 public protocol Injectable {
+    
     static var key: String { get }
     var resolve: AnyObject { get }
     init()

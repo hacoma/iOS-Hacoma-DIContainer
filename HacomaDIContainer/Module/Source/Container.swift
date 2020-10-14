@@ -1,18 +1,18 @@
 //
-//  DIContainer.swift
-//  Dependency
+//  Container.swift
+//  DIContainer
 //
 //  Created by hacoma on 2020/10/12.
 //
 
-public final class DIContainer {
+public final class Container {
     
     private var resolvers: [String: Resolvable] = [:]
     
-    public static let shared = DIContainer()
+    public static let shared = Container()
 }
 
-extension DIContainer {
+extension Container {
     
     public func register(type: Dependency.Type) {
         let resolver = type.resolver
@@ -24,7 +24,7 @@ extension DIContainer {
     }
 }
 
-extension DIContainer {
+extension Container {
     
     public func unregister(type: Dependency.Type) {
         let resolver = type.resolver
@@ -40,7 +40,7 @@ extension DIContainer {
     }
 }
 
-extension DIContainer {
+extension Container {
     
     public func resolve<DependencyInstance>() -> DependencyInstance? {
         return resolvers

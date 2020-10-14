@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C8583E02253601C100DA6662 /* Dependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8583E00253601C100DA6662 /* Dependency.swift */; };
-		C8583E03253601C100DA6662 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8583E01253601C100DA6662 /* DIContainer.swift */; };
+		C8583E03253601C100DA6662 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8583E01253601C100DA6662 /* Container.swift */; };
 		C86D6399253617AF008AF420 /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86D6398253617AF008AF420 /* Injectable.swift */; };
 		C86D63C025362FE5008AF420 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86D63BF25362FE5008AF420 /* Resolver.swift */; };
 		C8BF65BB25360133007A249C /* Dependency.h in Headers */ = {isa = PBXBuildFile; fileRef = C8BF65B925360133007A249C /* Dependency.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -16,10 +16,10 @@
 
 /* Begin PBXFileReference section */
 		C8583E00253601C100DA6662 /* Dependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dependency.swift; sourceTree = "<group>"; };
-		C8583E01253601C100DA6662 /* DIContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		C8583E01253601C100DA6662 /* Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 		C86D6398253617AF008AF420 /* Injectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
 		C86D63BF25362FE5008AF420 /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
-		C8BF65B725360133007A249C /* Dependency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dependency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8BF65B725360133007A249C /* DIContainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DIContainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8BF65B925360133007A249C /* Dependency.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dependency.h; sourceTree = "<group>"; };
 		C8BF65BA25360133007A249C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -46,7 +46,7 @@
 		C8BF65A5253600E4007A249C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C8BF65B725360133007A249C /* Dependency.framework */,
+				C8BF65B725360133007A249C /* DIContainer.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,7 +75,7 @@
 				C8583E00253601C100DA6662 /* Dependency.swift */,
 				C86D63BF25362FE5008AF420 /* Resolver.swift */,
 				C86D6398253617AF008AF420 /* Injectable.swift */,
-				C8583E01253601C100DA6662 /* DIContainer.swift */,
+				C8583E01253601C100DA6662 /* Container.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -94,9 +94,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C8BF65B625360133007A249C /* Dependency */ = {
+		C8BF65B625360133007A249C /* DIContainer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C8BF65BC25360133007A249C /* Build configuration list for PBXNativeTarget "Dependency" */;
+			buildConfigurationList = C8BF65BC25360133007A249C /* Build configuration list for PBXNativeTarget "DIContainer" */;
 			buildPhases = (
 				C8BF65B225360133007A249C /* Headers */,
 				C8BF65B325360133007A249C /* Sources */,
@@ -107,9 +107,9 @@
 			);
 			dependencies = (
 			);
-			name = Dependency;
+			name = DIContainer;
 			productName = Dependency;
-			productReference = C8BF65B725360133007A249C /* Dependency.framework */;
+			productReference = C8BF65B725360133007A249C /* DIContainer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -127,7 +127,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C8BF659E253600E4007A249C /* Build configuration list for PBXProject "HacomaDependency" */;
+			buildConfigurationList = C8BF659E253600E4007A249C /* Build configuration list for PBXProject "HacomaDIContainer" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -140,7 +140,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C8BF65B625360133007A249C /* Dependency */,
+				C8BF65B625360133007A249C /* DIContainer */,
 			);
 		};
 /* End PBXProject section */
@@ -163,7 +163,7 @@
 				C86D6399253617AF008AF420 /* Injectable.swift in Sources */,
 				C8583E02253601C100DA6662 /* Dependency.swift in Sources */,
 				C86D63C025362FE5008AF420 /* Resolver.swift in Sources */,
-				C8583E03253601C100DA6662 /* DIContainer.swift in Sources */,
+				C8583E03253601C100DA6662 /* Container.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,7 +310,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hacoma.Dependency;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hacoma.DIContainer;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -337,7 +337,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hacoma.Dependency;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hacoma.DIContainer;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -348,7 +348,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C8BF659E253600E4007A249C /* Build configuration list for PBXProject "HacomaDependency" */ = {
+		C8BF659E253600E4007A249C /* Build configuration list for PBXProject "HacomaDIContainer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C8BF65AA253600E4007A249C /* Debug */,
@@ -357,7 +357,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C8BF65BC25360133007A249C /* Build configuration list for PBXNativeTarget "Dependency" */ = {
+		C8BF65BC25360133007A249C /* Build configuration list for PBXNativeTarget "DIContainer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C8BF65BD25360133007A249C /* Debug */,

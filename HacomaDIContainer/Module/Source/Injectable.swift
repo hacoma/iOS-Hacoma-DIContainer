@@ -1,6 +1,6 @@
 //
 //  Injectable.swift
-//  Dependency
+//  DIContainer
 //
 //  Created by hacoma on 2020/10/14.
 //
@@ -9,7 +9,7 @@
 public class Injectable<DependencyInstance> {
     
     private lazy var instance: DependencyInstance? = {
-        return DIContainer.shared.resolve()
+        return Container.shared.resolve()
     }()
     
     public init() {

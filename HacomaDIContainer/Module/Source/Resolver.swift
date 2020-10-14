@@ -1,6 +1,6 @@
 //
 //  Resolver.swift
-//  Dependency
+//  DIContainer
 //
 //  Created by hacoma on 2020/10/14.
 //

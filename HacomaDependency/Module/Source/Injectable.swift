@@ -1,24 +1,27 @@
 //
 //  Injectable.swift
-//  HacomaInjector
+//  Dependency
 //
-//  Created by hacoma on 2020/10/12.
+//  Created by hacoma on 2020/10/14.
 //
 
-public protocol Injectable {
+@propertyWrapper
+public class Injectable<DependencyInstance> {
     
-    static var key: String { get }
-    var resolve: AnyObject { get }
-    init()
-}
-
-extension Injectable {
-    
-    public static var key: String {
-        return String(describing: self)
-    }
+    private lazy var instance: DependencyInstance? = {
+        return DIContainer.shared.resolve()
+    }()
     
     public init() {
-        self.init()
+        // available outside of the framework
+    }
+    
+    public var wrappedValue: DependencyInstance? {
+        get {
+            return instance
+        }
+        set {
+            instance = newValue
+        }
     }
 }

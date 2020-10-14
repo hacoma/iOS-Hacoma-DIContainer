@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
   s.name = 'HacomaDependency'
-  s.version = '1.0.1'
+  s.version = '1.0.2'
   s.license = { :type => 'MIT' }
   s.homepage = 'https://github.com/hacoma/iOS-Hacoma-Dependency'
   s.authors = { 'hacoma' => 'hacoma92@gmail.com' }
-  s.summary = 'Dependency Injector for iOS application'
+  s.summary = 'Dependency injection for iOS application'
   s.swift_version = '5.0'
 
   s.ios.deployment_target = '11.0'

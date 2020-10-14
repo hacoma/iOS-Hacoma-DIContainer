@@ -1,26 +1,18 @@
 //
-//  Injector.swift
-//  HacomaInjector
+//  Dependency.swift
+//  Dependency
 //
 //  Created by hacoma on 2020/10/12.
 //
 
-import Foundation
+public protocol Dependency {
+    
+    init()
+}
 
-public final class Dependency {
+extension Dependency {
     
-    private var injectables: [String: Injectable] = [:]
-    
-    public init() {
-        // available outside of the framework
-    }
-    
-    public func regist(type: Injectable.Type) {
-        let injectable = type.init()
-        injectables[type.key] = injectable
-    }
-    
-    public func load(for key: String) -> Injectable? {
-        return injectables[key]
+    static var resolver: Resolvable {
+        return Resolver<Self>()
     }
 }

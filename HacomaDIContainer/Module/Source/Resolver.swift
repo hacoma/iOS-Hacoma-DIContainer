@@ -11,15 +11,3 @@ class Resolver<DependencyImpl: Dependency>: Resolvable {
         return DependencyImpl.init() as? DependencyInstance
     }
 }
-
-protocol Resolvable {
-    
-    func resolve<DependencyInstance>() -> DependencyInstance?
-}
-
-extension Resolvable {
-    
-    var key: String {
-        return String(describing: self)
-    }
-}

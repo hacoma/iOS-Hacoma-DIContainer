@@ -1,12 +1,12 @@
 //
-//  Injected.swift
+//  Injectable.swift
 //  DIContainer
 //
 //  Created by hacoma on 2020/10/14.
 //
 
 @propertyWrapper
-public class Injected<DependencyInstance> {
+public class Injectable<DependencyInstance> {
     
     private lazy var instance: DependencyInstance? = {
         return Container.shared.resolve()
